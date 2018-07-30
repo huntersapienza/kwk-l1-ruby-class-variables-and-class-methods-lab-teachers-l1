@@ -32,7 +32,7 @@ class Song
     genre_hash = {}
     @@genres.each do |genre|
       if genre_hash.key?(genre)
-        genre_hash[genre] = 2
+        genre_hash[genre] += 1
       else
         genre_hash[genre] = 1
       end
@@ -44,7 +44,7 @@ class Song
     artist_hash = {}
     @@artists.each do |artist|
       if artist_hash.key?(artist)
-        artist_hash[artist] = 2
+        artist_hash[artist] += 1
       else
         artist_hash[artist] = 1
       end
